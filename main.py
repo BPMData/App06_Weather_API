@@ -20,6 +20,8 @@ def about(station, date):
            "temperature": temperature}
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
+    # default port is 5000. If you want to run two apps locally at the same time to check ur development,
+    # specify a different port for each app.
 else:
     pass
