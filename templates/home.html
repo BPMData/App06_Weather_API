@@ -12,10 +12,20 @@
 <body>
 <h1 class="NASABlue" style="text-align: center"> Weather API</h1>
 </body>
-<p> URL format: http://127.0.0.1: 5000/api/v1/station/date</p>
-<p>URL Example: http://127.0.0.1: 5000/api/v1/centralpark/1988-10-31<br>
+<h2>How to get the data for a particular station on a particular day:</h2>
+<p>URL format: http://127.0.0.1: 5000/api/v1/stationid/date</p>
+<p>URL Example: http://127.0.0.1: 5000/api/v1/22/1988-10-31<br>
 <i>Yes, the dashes (-) ARE mandatory!</i></p>
 <b># SPOOKY</b>
+
+<h2>How to get all the data for a particular station FOR ALL TIME, sometimes dating back to as far as 1860:</h2>
+<p>URL format: http://127.0.0.1: 5000/api/v1/stationid</p>
+<p>URL Example: http://127.0.0.1: 5000/api/v1/22<br></p>
+<b>Technically even MORE SPOOKY, as u just called the data for literally hundreds of Halloweens 😱</b>
+
+<h2>How to get all data for a particular station FOR ONE YEAR</h2>
+<p>URL format: http://127.0.0.1: 5000/api/v1/<b><u>annual</u></b>/station/year</p>
+<p>URL Example: http://127.0.0.1: 5000/api/v1/<b><u>annual</u></b>/22/1988<br></p>
 
 <p>{{data|safe}}</p>
 </html>
